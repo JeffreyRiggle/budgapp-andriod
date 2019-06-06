@@ -14,11 +14,6 @@ class CategoryItemAdapter : ArrayAdapter<CategoryModel> {
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        if (convertView == null) {
-            return CategoryConfigurationItemView(categories[position], this.context)
-        }
-        else {
-            return convertView
-        }
+        return CategoryConfigurationItemView(categories[position], this.context)
     }
 }

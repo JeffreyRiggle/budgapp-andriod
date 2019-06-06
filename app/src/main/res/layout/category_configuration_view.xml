@@ -7,6 +7,21 @@
             android:text="Categories"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:id="@+id/newCategoryName"/>
+        <Button
+                android:text="Add Category"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/addCategoryBtn"/>
+    </RelativeLayout>
     <ListView
             android:id="@+id/categoryList"
             android:layout_width="match_parent"
